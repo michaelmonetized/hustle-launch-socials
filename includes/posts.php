@@ -75,12 +75,13 @@ class HLSocials_Posts
 	public static function insert($post_type, $title, $post_status, $parent = 0, $date = false)
 	{
 		if (!$date) {
-			$date = date('Y-m-d H:i:s', strtotime('+1 days'));
+			$date = date('c', strtotime('+1 days'));
 		}
 
 		$content = $title;
-		$title_arr = explode(' ', $title);
-		$short_title = $title_arr[0] . ' ' . $title_arr[1];
+    
+    // create a short title from the first 3 words of the content.
+    $short_title = substr($content, 0, strpos($content, ' ', strpos($content, ' ', strpos($content, ' '))));
 
 		$id = wp_insert_post(array(
 			'post_type' => $post_type,

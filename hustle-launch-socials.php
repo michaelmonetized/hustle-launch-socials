@@ -3,7 +3,7 @@
  * Plugin Name: Hustle Launch Socials
  * Plugin URI: https://hustlelaunch.com/plugins/hustle-launch-socials/
  * Description: A handy tool to quickly schedule social posts.
- * Version: 0.0.1
+ * Version: 0.0.6
  * Author: Hustle Launch
  * Author URI: https://www.hustlelaunch.com/
  * Plugin URI: https://www.hustlelaunch.com/plugins/hustle-launch-socials/
